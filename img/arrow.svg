@@ -1,0 +1,17 @@
+<svg width="19.000000" height="17.000000" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<pattern id="pattern_10_10" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+			<use xlink:href="#image10_1_0" transform="matrix(0.1,0,0,0.058824,0,0)"/>
+		</pattern>
+		<image id="image10_1_0" width="10.000000" height="17.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAARCAYAAADkIz3lAAAABHNCSVQICAgIfAhkiAAAAOBJREFUKJGFz79tAlEMx/GvfSRICKSMwAjJBtCAohThj4RElTABMAGwARtcSQGIjitSIDZgBEaIAFG8JO9SoEPAce9cufj4Z1um06Ckqu+73XHU6dS/SShV1W4IvXwht/L9xVMiNMb2ga0Izy4sAJNJUHx41BVQDEM2h/2xfHuGRE0alsspF76CLqy3sN1+3f4YW7588G5iVPP51yDEDgHs3+9LLPGEgs8ICQxbrbdNLPGE1I9Qs1kdxVYnoSvoQmeYhgBkNlvWEG/hQgAq4n2kIYCMMbafzXrjRqOyTkIA/94ee6WGf/sbAAAAAElFTkSuQmCC"/>
+		<pattern id="pattern_10_20" patternContentUnits="objectBoundingBox" width="1.000000" height="1.000000">
+			<use xlink:href="#image10_2_0" transform="matrix(0.058824,0,0,0.333333,0,0)"/>
+		</pattern>
+		<image id="image10_2_0" width="17.000000" height="3.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAADCAYAAAB1c+RqAAAABHNCSVQICAgIfAhkiAAAAEFJREFUCJljXL16uwMTE2M8A1mA8UNwsHsh49q1O9f/Z2AIIM8QBoZ/f/8Ysvz69a+QlZVpAzkGMDExPggJ874AAIvgEwkUDEZCAAAAAElFTkSuQmCC"/>
+	</defs>
+	<rect id="Vector" x="9.000000" width="10.000000" height="17.000000" fill="url(#pattern_10_10)" fill-opacity="1.000000"/>
+	<rect id="Vector (1)" y="7.000000" width="17.000000" height="3.000000" fill="url(#pattern_10_20)" fill-opacity="1.000000"/>
+</svg>
