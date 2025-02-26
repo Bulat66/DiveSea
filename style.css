@@ -240,6 +240,7 @@ header .flex:nth-child(2) button{
 	display: flex;
 	justify-content: center;
 	gap: 39.84px;
+	transition: 1s ease;
 }
 .type-b .flex .item{
 	position: relative;
@@ -249,7 +250,7 @@ header .flex:nth-child(2) button{
 	flex-direction: column;
 	justify-content: space-between;
 	background: white;
-	transition: .5s ease;
+	transition: 1s ease;
 }
 .type-b .flex .item img{
 	border-radius: 23.48px;
@@ -330,7 +331,6 @@ header .flex:nth-child(2) button{
 	background-size: 50%;
 	background-position: center;
 }
-
 .type-c{
 	width: 100%;
 	padding: 19.5px;
@@ -365,29 +365,22 @@ header .flex:nth-child(2) button{
 	display: flex;
 	justify-content: space-between;
 }
+.type-c .table-row ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 150px;
+}
 .type-c .table-row .icon{
 	display: flex;
 	gap: 23.65px;
 	align-items: center;
 	overflow: hidden;
 }
-.type-c .table-row .icon .img{
+.type-c .table-row .icon img{
 	border-radius: 50%;
 	aspect-ratio: 1;
 	width: 84.04px;
-}
-.type-c .table-row:nth-child(odd) .icon .img{
-	background: url('img/b-1.png') no-repeat;
-	background-size: cover;
-	background-position: top 5% left -20%;
-}
-.type-c .table-row:nth-child(even) .icon .img{
-	background: url('img/b-5.jfif') no-repeat;
-	background-size: cover;
-	background-position: right 40% bottom 15%;
-}
-.type-c .table-row .icon img{
-
 }
 .type-c .percent{
 	color: #10C352;
@@ -630,6 +623,7 @@ footer .footer-child ul{
 		height: 50px;
 	}
 	.type-a{
+		margin-top: 80px;
 		background-size: 700px;
 	}
 	.a-child h3{
@@ -666,6 +660,13 @@ footer .footer-child ul{
 	.a-child-second{
 		width: 150px;
 	}
+	.type-b{
+		padding: 45px 0px;
+		gap: 80px;
+	}
+	.type-b h3{
+		font-size: 40px;
+	}
 }
 @media (max-width: 1024px){
 	header{
@@ -673,6 +674,7 @@ footer .footer-child ul{
 		flex-wrap: wrap;
 	}
 	.type-a{
+		margin-top: 60px;
 		background-size: 600px;
 	}
 	.a-child h3{
@@ -702,6 +704,13 @@ footer .footer-child ul{
 	.a-child-second{
 		width: 140px;
 	}
+	.type-b{
+		padding: 30px 0px;
+		gap: 60px;
+	}
+	.type-b h3{
+		font-size: 35px;
+	}
 }
 @media (max-width: 992px){
 		header{
@@ -717,6 +726,7 @@ footer .footer-child ul{
 		font-size: 12px;
 	}
 	.type-a{
+		margin-top: 50px;
 		background-size: 530px;
 		background-position: top 80px right 0;
 	}
@@ -747,10 +757,57 @@ footer .footer-child ul{
 	.a-child-second{
 		width: 130px;
 	}
+	.type-b{
+		padding: 15px 0px;
+		gap: 40px;
+	}
+	.type-b h3{
+		font-size: 30px;
+	}
+	.type-b .flex .item img{
+		border-radius: 20px;
+		max-width: 240px;
+	}
+	.type-b .flex .item h3{
+		font-size: 20px;
+	}
+	.type-b .flex .item .time{
+		font-size: 14px;
+		padding: 11px;
+		top: 28px;
+		right: 28px;
+	}
+	.type-b .flex .item .box{
+		gap: 40px;
+	}
+	.type-b .flex .item .box div{
+		gap: 4px;
+	}
+	.type-b .flex .item .box p{
+		font-size: 14.12px;
+	}
+	.type-b .flex .item .box span{
+		gap: 3px;
+		font-size: 16.47px;
+	}
+	.type-b .flex .item .box button{
+		width: 120px;
+		height: 50px;
+		border-radius: 10px;
+		bottom: 30px;
+		right: 30px;
+	}
+	.type-b .flex .item .box span img{
+		width: 10px;
+		border-radius: 18px;
+	}
 }
 @media (max-width: 768px){
 	header ul{
 		flex-wrap: wrap;
+	}
+	header .flex:nth-child(2) ul{
+		font-size: 16px;
 	}
 	header .flex:nth-child(2) input::placeholder{
 		font-size: 12px;
@@ -762,6 +819,7 @@ footer .footer-child ul{
 		padding: 0 20px;
 	}
 	.type-a{
+		margin-top: 40px;
 		background-size: 450px;
 		background-position: top 60px right 0;
 	}
@@ -789,12 +847,55 @@ footer .footer-child ul{
 	.a-child-second{
 		width: 125px;
 	}
+	.type-b{
+		padding: 10px 0px;
+		gap: 20px;
+	}
+	.type-b h3{
+		font-size: 25px;
+	}
+	.type-b .flex .item img{
+		border-radius: 20px;
+		max-width: 200px;
+	}
+	.type-b .flex .item h3{
+		font-size: 20px;
+	}
+	.type-b .flex .item .time{
+		font-size: 14px;
+		padding: 11px;
+		top: 26px;
+		right: 26px;
+	}
+	.type-b .flex .item .box{
+		gap: 35px;
+	}
+	.type-b .flex .item .box div{
+		gap: 4px;
+	}
+	.type-b .flex .item .box p{
+		font-size: 14px;
+	}
+	.type-b .flex .item .box span{
+		gap: 3px;
+		font-size: 14px;
+	}
+	.type-b .flex .item .box button{
+		width: 100px;
+		height: 45px;
+		bottom: 25px;
+		right: 25px;
+	}
 }
 @media (max-width: 567px){
+	header .flex:nth-child(2) ul{
+		font-size: 14px;
+	}
 	header .flex:nth-child(2) input::placeholder{
 		font-size: 10px;
 	}
 	.type-a{
+		margin-top: 30px;
 		background-size: 350px;
 		background-position: top 80px right 0;
 	}
@@ -818,6 +919,40 @@ footer .footer-child ul{
 	}
 	.a-child-second{
 		width: 120px;
+	}
+	.type-b h3{
+		font-size: 20px;
+	}
+	.type-b .flex .item img{
+		max-width: 180px;
+	}
+	.type-b .flex .item h3{
+		font-size: 18px;
+	}
+	.type-b .flex .item .time{
+		font-size: 12px;
+		padding: 10px;
+		top: 24px;
+		right: 24px;
+	}
+	.type-b .flex .item .box{
+		gap: 25px;
+	}
+	.type-b .flex .item .box div{
+		gap: 4px;
+	}
+	.type-b .flex .item .box p{
+		font-size: 12px;
+	}
+	.type-b .flex .item .box span{
+		gap: 3px;
+		font-size: 12px;
+	}
+	.type-b .flex .item .box button{
+		width: 80px;
+		height: 40px;
+		bottom: 20px;
+		right: 20px;
 	}
 }
 @media (max-width: 480px){
@@ -872,22 +1007,26 @@ footer .footer-child ul{
 	header .flex:nth-child(2) input::placeholder{
 		font-size: 10px;
 	}
+	main{
+		margin-top: 70px;
+	}
 	.container{
 		padding: 0 15px;
 	}
-	.container:nth-child(1){
-		margin: 30px auto;
-	}
 	.type-a{
+		margin-top: 20px;
 		background-size: 250px;
 		background-position: top 80px right 0;
+	}
+	.type-a .flex .btn{
+		font-size: 10px;
 	}
 	.a-child h3{
 		font-size: 30px;
 	}
 	.a-child .flex{
 		gap: 12px;
-		height: 26px;
+		height: 30px;
 		margin-bottom: 20px;
 	}
 	.a-child ul{
@@ -901,6 +1040,44 @@ footer .footer-child ul{
 	}
 	.a-child-second{
 		width: 110px;
+	}
+	.type-b h3{
+		font-size: 15px;
+	}
+	.type-b .flex .item img{
+		border-radius: 20px;
+		max-width: 150px;
+	}
+	.type-b .flex .item h3{
+		font-size: 20px;
+	}
+	.type-b .flex .item .time{
+		font-size: 14px;
+		padding: 11px;
+		top: 26px;
+		right: 26px;
+	}
+	.type-b .flex .item .box{
+		gap: 35px;
+	}
+	.type-b .flex .item .box div{
+		gap: 4px;
+	}
+	.type-b .flex .item .box p{
+		font-size: 14px;
+	}
+	.type-b .flex .item .box span{
+		gap: 3px;
+		font-size: 14px;
+	}
+	.type-b .flex .item .box button{
+		width: 80px;
+		height: 45px;
+		bottom: 25px;
+		right: 25px;
+	}
+	.type-c .table-row ul li:bth-child(3), .type-c .table-row ul li:nth-child(4){
+		display: none;
 	}
 }
 @media (max-width: 320px){

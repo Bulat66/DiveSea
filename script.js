@@ -26,49 +26,36 @@ function open(a, b){
 		a.style.top = `${-elemH}px`;
 	}
 }
-nav_list.style.top = nav_list.clientHeight;
-// 	BLOCK B
+	// BLOCK B
 
-// let block_E = document.getElementById('e-block');
-// let e_BTN_PREV = document.getElementById('e-btn-prev');
-// let e_BTN_NEXT = document.getElementById('e-btn-next');
+let block_B = document.getElementById('b-block');
+let b_BTN_PREV = document.getElementById('b-btn-prev');
+let b_BTN_NEXT = document.getElementById('b-btn-next');
 
+let bArray = Array.from(block_B.children);
+let b_step = 0;
 
-// let type_B_slider_items = Array.from(block_E.children);
-// let step_block_E = 0;
-
-// e_BTN_NEXT.addEventListener('click', () => {
-
-// 		// type_B_slider_items.pop();
-// 		// console.log(type_B_slider_items);
-
-// 		// block_E.children.pop();
-// 		// console.log(block_E.children);
-
-// 		let arr = block_E.children;
-// 		let item = arr[arr.length-1];
-// 		arr[arr.length-1].remove();
-// 		block_E.prepend(item);
-// 		console.log(arr);
-// 		console.log(block_E);
-// 	}
-// );
-
-// e_BTN_PREV.addEventListener('click', () => {
-
-// 		// type_B_slider_items.shift();
-// 		// console.log(type_B_slider_items);
-
-// 		// block_E.children.shift();
-// 		// console.log(block_E.children);
-
-// 		let arr = block_E.children;
-// 		let item = arr[0];
-// 		arr[0].remove();
-// 		console.log(arr);
-// 		block_E.append(item);
-// 		console.log(arr, block_E);
-// 	}
-// );
-// console.log(block_E.children[block_E.children.length-1]);
-// console.log(type_B_slider_items);
+function b_next(a) {
+	if(b_step <= bArray.length - 1){
+		a.children[b_step].remove();
+		a.prepend(bArray[b_step]);
+		b_step++;
+	} else {
+		b_step = 0;
+		a.children[b_step].remove();
+		a.prepend(bArray[b_step]);
+	}
+}
+function b_prev(a){
+		if(b_step <= bArray.length - 1){
+		a.children[b_step].remove();
+		a.append(bArray[b_step]);
+		b_step++;
+	} else {
+		b_step = 0;
+		a.children[b_step].remove();
+		a.append(bArray[b_step]);
+	}
+}
+b_BTN_NEXT.addEventListener('click', () => { b_next(block_B) });
+b_BTN_PREV.addEventListener('click', () => { b_prev(block_B) });
