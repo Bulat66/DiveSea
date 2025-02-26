@@ -821,41 +821,6 @@ footer .footer-child ul{
 	}
 }
 @media (max-width: 480px){
-	header .flex:nth-child(2) input::placeholder{
-		font-size: 10px;
-	}
-	.container{
-		padding: 0 15px;
-	}
-	.container:nth-child(1){
-		margin: 30px auto;
-	}
-	.type-a{
-		background-size: 250px;
-		background-position: top 80px right 0;
-	}
-	.a-child h3{
-		font-size: 30px;
-	}
-	.a-child .flex{
-		gap: 12px;
-		height: 26px;
-		margin-bottom: 20px;
-	}
-	.a-child ul{
-		gap: 28px;
-	}
-	.a-child ul li{
-		height: 30px;
-	}
-	.a-child ul li p{
-		font-size: 16px;
-	}
-	.a-child-second{
-		width: 110px;
-	}
-}
-@media (max-width: 320px){
 	header{
 		height: 50px;
 		padding: 15px 15px 5px;
@@ -904,6 +869,42 @@ footer .footer-child ul{
 		margin: 15px auto;
 		align-self: center;
 	}
+	header .flex:nth-child(2) input::placeholder{
+		font-size: 10px;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	.container:nth-child(1){
+		margin: 30px auto;
+	}
+	.type-a{
+		background-size: 250px;
+		background-position: top 80px right 0;
+	}
+	.a-child h3{
+		font-size: 30px;
+	}
+	.a-child .flex{
+		gap: 12px;
+		height: 26px;
+		margin-bottom: 20px;
+	}
+	.a-child ul{
+		gap: 28px;
+	}
+	.a-child ul li{
+		height: 30px;
+	}
+	.a-child ul li p{
+		font-size: 16px;
+	}
+	.a-child-second{
+		width: 110px;
+	}
+}
+@media (max-width: 320px){
+	
 	.a-child h3{
 		font-size: 24px;
 	}
